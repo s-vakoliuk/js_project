@@ -5,6 +5,6 @@ for (let i=0; i<=9; i=i+1){
   divArray.push("Я програмую на Java Script");
   }
 for (let i of divArray) {
-    document.write(`<div>${i}</div>`);
+    document.write(`<h1>${i}</h1>`);
     document.write('<br>');
 }
