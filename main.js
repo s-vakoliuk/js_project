@@ -52,10 +52,26 @@ for (let i=0; i<=9; i=i+1) {
     console.log(mixArray[i]);
 }
 //- Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки булеві елементи
-for (const mixArray of i) {
-    if (typeof mixArray === 'boolean'){
-        console.log(mixArray);
-    }
+let mixArray = ["Сергій",81, true, "Анна",2009, "Наталя", 79, false,"Михась", 2006];
+for (let item of mixArray) {
+   if (typeof item==='boolean'){
+      console.log(item);
+      console.log("_________");
+   }
 }
 //- Створити масив з 10 елементів числового, стірчкового і булевого типу. За допомогою if та typeof вивести тільки числові елементи
+let mixArray = ["Сергій",81, true, "Анна",2009, "Наталя", 79, false,"Михась", 2006];
+for (let item of mixArray) {
+   if (typeof item==='number'){
+      console.log(item);
+      console.log("_________");
+   }
+}
 //- Створити масив з 10 елементів числового, стрічкового і булевого типу. За допомогою if та typeof вивести тільки рядкові елементи
+
+let mixArray = ["Сергій",81, true, "Анна",2009, "Наталя", 79, false,"Михась", 2006];
+for (let item of mixArray) {
+   if (typeof item==='string'){
+      console.log(item);
+      console.log("_________");
+   }
