@@ -71,7 +71,38 @@ for (let item of mixArray) {
 
 let mixArray = ["Сергій",81, true, "Анна",2009, "Наталя", 79, false,"Михась", 2006];
 for (let item of mixArray) {
-   if (typeof item==='string'){
-      console.log(item);
-      console.log("_________");
+    if (typeof item === 'string') {
+        console.log(item);
+        console.log("_________");
+    }
+}
+//Створити цикл for на 100 ітерацій з кроком 1. Вивести поточний номер кроку через console.log та document.write
+let rdArray=[]
+for ( let item = 0; item < 100; item=item+1){
+   rdArray[item] = Math.random();
+   console.log(rdArray[item]);
+   document.write(item,'-', rdArray[item],'<br>'));
+}
+//Створити цикл for на 100 ітерацій з кроком 2. Вивести поточний номер кроку через console.log та document.write
+for ( let item = 0; item < 100; item=item+2){
+   rdArray[item] = Math.random();
+   console.log(rdArray[item]);
+   document.write(item,'-', rdArray[item],'<br>'));
+}
+//Створити цикл for на 100 ітерацій. Вивести тільки парні кроки. через console.log + document.write
+let rdArray=[]
+for ( let item = 0; item < 100; item=item+2){
+   rdArray[item] = Math.random();
+   if (item%2==0){
+      console.log(rdArray);
+      document.write(item,'-', rdArray[item],'<br>'));
+}
+//Створити цикл for на 100 ітерацій. Вивести тільки непарні кроки. через console.log + document.write
+let rdArray=[]
+for ( let item = 0; item < 100; item=item+1){
+   rdArray[item] = Math.random();
+   if (item%2==1){
+      console.log(rdArray[item]);
+      document.write(item,'-', rdArray[item],'<br>');
    }
+}
